@@ -15,6 +15,11 @@ func main() {
 
 	fmt.Println(luas)
 	fmt.Println(keliling)
+
+	kali, bagi := kalibagi(4, 2)
+
+	fmt.Println(kali)
+	fmt.Println(bagi)
 }
 
 func hello(sentence string) string {
@@ -32,4 +37,12 @@ func calculate(panjang, lebar int) (int, int) {
 	keliling := 2 * (panjang + lebar)
 
 	return luas, keliling
+}
+
+//predefine function
+func kalibagi(number, numberTwo int) (kali int, bagi int) {
+	kali = number * numberTwo
+	bagi = number / numberTwo
+
+	return
 }
