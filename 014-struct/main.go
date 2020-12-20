@@ -51,6 +51,6 @@ func main() {
 
 // funsi denga objek type User sebagai tipe data parameter
 func displayUser(user User) (result string) {
-	result = fmt.Sprintf("Nama: %s %s Email: %s", user.firstName, user.lastName, user.email)
+	result = fmt.Sprintf("Nama: %s %s Email: %s is active: %t", user.firstName, user.lastName, user.email, user.isActive)
 	return
 }
