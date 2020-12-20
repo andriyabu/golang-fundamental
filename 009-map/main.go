@@ -17,7 +17,24 @@ func main() {
 
 	fmt.Println(myMap)
 
-	for index, value := range myMap {
-		fmt.Println(index,": ",value)
+	for key, value := range myMap {
+		fmt.Println(key, ": ", value)
 	}
+
+	fmt.Println("======================")
+	// menghapus map dengan fungsi delete(namaMap,key)
+	delete(myMap, "alamat")
+
+	for key, value := range myMap {
+		fmt.Println(key, ": ", value)
+	}
+
+	fmt.Println("====================================")
+	//mengecek apakah ada atau tidak key tertentu dalam map
+	//  value, boolean = namaMap[key]
+	value, isAvailable := myMap["alamat"] // false karena alamat sudah di hapus
+
+	fmt.Println("is available :", isAvailable) // true kalau ada dan false kalau kosong
+	fmt.Println(value)                         // tidak ditampilkan jika tidak ada
+
 }
