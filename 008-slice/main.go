@@ -16,6 +16,6 @@ func main() {
 	fruits = append(fruits, "pinutes")
 
 	for _, fruit := range fruits {
-		fmt.Println(fruit)
+		fmt.Println("Fruit : ",fruit)
 	}
 }
